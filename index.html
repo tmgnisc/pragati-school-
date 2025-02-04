@@ -7,33 +7,36 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <!-- Navigation Bar -->
     <nav class="fixed top-0 w-full bg-transparent z-50">
-      <div
-        class="container mx-auto px-4 flex justify-between items-center py-4"
-      >
+      <div class="container mx-auto px-4 flex justify-between items-center py-4">
+        <!-- Logo -->
         <a href="#" class="flex items-center">
           <img src="Assets/images/logo.png" alt="Logo" class="h-12 w-12" />
         </a>
 
+        <!-- Navigation Links -->
         <ul class="flex space-x-8">
-          <li><a href="#" class="text-black hover:text-gray-700">About</a></li>
-          <li>
-            <a href="#" class="text-black hover:text-gray-700">Academic Life</a>
-          </li>
-          <li>
-            <a href="#" class="text-black hover:text-gray-700">Curriculum</a>
-          </li>
-          <li>
-            <a href="#" class="text-black hover:text-gray-700">Admission</a>
-          </li>
-          <li>
-            <a href="#" class="text-black hover:text-gray-700">What's new</a>
-          </li>
-          <li>
-            <a href="#" class="text-black hover:text-gray-700">Contact</a>
-          </li>
+          <li><a href="#" class="text-white hover:text-[#cb356a]">About</a></li>
+          <li><a href="#" class="text-white hover:text-[#cb356a]">Academics</a></li>
+          <li><a href="#" class="text-white hover:text-[#cb356a]">Curriculum</a></li>
+          <li><a href="#" class="text-white hover:text-[#cb356a]">Admission</a></li>
+          <li><a href="#" class="text-white hover:text-[#cb356a]">Visit</a></li>
+          <li><a href="#" class="text-white hover:text-[#cb356a]">Contact</a></li>
         </ul>
+
+        <!-- Login Button -->
+        <a href="https://ingrails.com/school/" 
+           class="bg-[#cb356a] text-white px-6 py-2 rounded-full hover:bg-[#a72c5a] transition">
+          Login
+        </a>
       </div>
     </nav>
+    
+    <!-- Hero Section for Better Visibility -->
+    <section class="h-screen bg-cover bg-center flex items-center justify-center" 
+             style="background-image: url('Assets/images/background.jpg');">
+      <h1 class="text-5xl text-white font-bold">Welcome to Pragati School</h1>
+    </section>
   </body>
 </html>
