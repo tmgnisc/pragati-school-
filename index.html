@@ -6,37 +6,69 @@
     <title>Pragati School</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <!-- Navigation Bar -->
+  <body class="relative">
     <nav class="fixed top-0 w-full bg-transparent z-50">
-      <div class="container mx-auto px-4 flex justify-between items-center py-4">
-        <!-- Logo -->
+      <div
+        class="container mx-auto px-4 flex justify-between items-center py-4"
+      >
         <a href="#" class="flex items-center">
           <img src="Assets/images/logo.png" alt="Logo" class="h-12 w-12" />
         </a>
 
-        <!-- Navigation Links -->
         <ul class="flex space-x-8">
           <li><a href="#" class="text-white hover:text-[#cb356a]">About</a></li>
-          <li><a href="#" class="text-white hover:text-[#cb356a]">Academics</a></li>
-          <li><a href="#" class="text-white hover:text-[#cb356a]">Curriculum</a></li>
-          <li><a href="#" class="text-white hover:text-[#cb356a]">Admission</a></li>
+          <li>
+            <a href="#" class="text-white hover:text-[#cb356a]">Academics</a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-[#cb356a]">Curriculum</a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-[#cb356a]">Admission</a>
+          </li>
           <li><a href="#" class="text-white hover:text-[#cb356a]">Visit</a></li>
-          <li><a href="#" class="text-white hover:text-[#cb356a]">Contact</a></li>
+          <li>
+            <a href="#" class="text-white hover:text-[#cb356a]">Contact</a>
+          </li>
         </ul>
 
-        <!-- Login Button -->
-        <a href="https://ingrails.com/school/" 
-           class="bg-[#cb356a] text-white px-6 py-2 rounded-full hover:bg-[#a72c5a] transition">
+        <a
+          href="https://ingrails.com/school/"
+          class="bg-[#cb356a] text-white px-6 py-2 rounded-full hover:bg-[#a72c5a] transition"
+        >
           Login
         </a>
       </div>
     </nav>
-    
-    <!-- Hero Section for Better Visibility -->
-    <section class="h-screen bg-cover bg-center flex items-center justify-center" 
-             style="background-image: url('Assets/images/background.jpg');">
-      <h1 class="text-5xl text-white font-bold">Welcome to Pragati School</h1>
+
+    <!-- Hero Section with Video -->
+    <section class="relative w-full h-[500px] overflow-hidden">
+      <video
+        class="absolute top-0 left-0 w-full h-full object-cover"
+        autoplay
+        loop
+        muted
+        playsinline
+      >
+        <source src="Assets/video/hero.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section class="w-full py-12 bg-[#cb356a]">
+      <div class="container mx-auto flex items-center justify-center space-x-8">
+        <div class="text-center">
+          <h2 class="text-white text-3xl md:text-4xl font-bold">Learn Today</h2>
+        </div>
+
+        <div class="w-[2px] h-12 bg-white"></div>
+
+        <div class="text-center">
+          <h2 class="text-white text-3xl md:text-4xl font-bold">
+            Lead Tomorrow
+          </h2>
+        </div>
+      </div>
     </section>
   </body>
 </html>
