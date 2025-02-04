@@ -26,3 +26,35 @@ const carousel = document.getElementById('carousel-slides');
     currentIndex = (currentIndex + 1) % slides.length;
     updateCarousel();
   }, 5000); 
+
+
+  const testimonialSlides = document.getElementById("testimonial-slides");
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % 2; // Adjust based on the number of testimonials
+    testimonialSlides.style.transform = `translateX(-${index * 100}%)`;
+  }, 3000); // Change slide every 3 seconds
+
+
+  // JavaScript function to show the corresponding event image
+  function showEventImage(eventId) {
+    // Hide all images
+    document.querySelectorAll("#event-image img").forEach((img) => {
+      img.classList.add("hidden");
+    });
+    // Show the selected image
+    const selectedImage = document.getElementById(eventId);
+    if (selectedImage) {
+      selectedImage.classList.remove("hidden");
+    }
+  }
+
+  // Initialize with the first image visible
+  showEventImage('event1');
+
+
+  function toggleMenu() {
+    const menu = document.getElementById("mobile-menu");
+    menu.classList.toggle("hidden");
+  }

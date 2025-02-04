@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pragati School</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      function toggleMenu() {
-        const menu = document.getElementById("mobile-menu");
-        menu.classList.toggle("hidden");
-      }
-    </script>
+    <script
+      src="https://kit.fontawesome.com/your-kit-id.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/9d508255d4.js" crossorigin="anonymous"></script>
   </head>
   <body class="relative">
     <!-- Navigation Bar -->
@@ -183,17 +182,17 @@
     <!-- Why pragati Section -->
     <section class="w-full py-12 bg-[#f4f4f8]">
       <div class="container mx-auto px-4">
-        
         <div class="mb-8 text-left">
           <h2 class="text-2xl md:text-3xl font-bold text-[#cb356a]">
             <span class="border-l-4 border-[#cb356a] pl-2">Why Pragati?</span>
           </h2>
         </div>
-    
-    
+
         <div class="relative">
-         
-          <div id="carousel" class="overflow-hidden rounded-lg max-w-[800px] mx-auto">
+          <div
+            id="carousel"
+            class="overflow-hidden rounded-lg max-w-[800px] mx-auto"
+          >
             <div
               id="carousel-slides"
               class="flex transition-transform duration-700 ease-in-out"
@@ -265,7 +264,6 @@
               </div>
             </div>
           </div>
-    
 
           <button
             id="prev-button"
@@ -308,7 +306,254 @@
         </div>
       </div>
     </section>
+
+    <!-- Parents Testimonials Section -->
+    <section class="w-full py-12 bg-[#f4f4f8]">
+      <div class="container mx-auto px-4">
+        <div class="mb-8 text-left">
+          <h2 class="text-2xl md:text-3xl font-bold text-[#cb356a]">
+            <span class="border-l-4 border-[#cb356a] pl-2"
+              >Parents Testimonials</span
+            >
+          </h2>
+        </div>
+
+        <div class="relative">
+          <div
+            id="testimonial-carousel"
+            class="overflow-hidden rounded-lg max-w-[800px] mx-auto"
+          >
+            <div
+              id="testimonial-slides"
+              class="flex transition-transform duration-700 ease-in-out"
+            >
+              <!-- Testimonial 1 -->
+              <div class="flex-shrink-0 w-full text-center px-4">
+                <img
+                  src="https://placehold.co/100"
+                  alt="Parent 1"
+                  class="rounded-full mx-auto mb-4 w-20 h-20"
+                />
+                <p class="text-gray-700 italic mb-2">
+                  "The school has provided an amazing learning environment for
+                  our child. We are grateful for the dedication of the
+                  teachers."
+                </p>
+                <p class="text-[#cb356a] font-bold">Parent of John Doe</p>
+              </div>
+              <!-- Testimonial 2 -->
+              <div class="flex-shrink-0 w-full text-center px-4">
+                <img
+                  src="https://placehold.co/100"
+                  alt="Parent 2"
+                  class="rounded-full mx-auto mb-4 w-20 h-20"
+                />
+                <p class="text-gray-700 italic mb-2">
+                  "Fishtail Academy truly prioritizes students' holistic
+                  development and provides great support even during challenging
+                  times."
+                </p>
+                <p class="text-[#cb356a] font-bold">Parent of Jane Smith</p>
+              </div>
+              <!-- Add more testimonials as needed -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="w-full py-12 bg-[#f4f4f8]">
+      <div class="container mx-auto px-4">
+        <!-- Section Title -->
+        <div class="mb-8 text-left">
+          <h2 class="text-2xl md:text-3xl font-bold text-[#cb356a]">
+            <span class="border-l-4 border-[#1e3a8a] pl-2">Events</span>
+          </h2>
+        </div>
+
+        <!-- Events Content -->
+        <div class="flex flex-col md:flex-row items-start justify-between">
+          <!-- Events List -->
+          <div class="w-full md:w-1/2 space-y-4">
+            <button
+              class="w-full bg-[#cb356a] text-white px-4 py-4 text-left rounded-lg shadow hover:bg-[#3b5998] transition"
+              onclick="showEventImage('event1')"
+            >
+              ChatGPT and AI session 2080 <br />
+              <span class="text-sm text-gray-300">16 September, 2022</span>
+            </button>
+            <button
+              class="w-full bg-[#cb356a] text-white px-4 py-4 text-left rounded-lg shadow hover:bg-[#3b5998] transition"
+              onclick="showEventImage('event2')"
+            >
+              Interhouse basketball tournament 2080 <br />
+              <span class="text-sm text-gray-300">15 September, 2022</span>
+            </button>
+            <button
+              class="w-full bg-[#cb356a] text-white px-4 py-4 text-left rounded-lg shadow hover:bg-[#3b5998] transition"
+              onclick="showEventImage('event3')"
+            >
+              Friday class performance, class 6 <br />
+              <span class="text-sm text-gray-300">01 August, 2022</span>
+            </button>
+          </div>
+
+          <!-- Event Image Display -->
+          <div class="w-full md:w-1/2 mt-8 md:mt-0 md:pl-8">
+            <div id="event-image" class="rounded-lg overflow-hidden shadow">
+              <img
+                id="event1"
+                src="Assets/images/two.jpg"
+                alt="img"
+                class="w-full h-auto hidden"
+              />
+              <img
+                id="event2"
+                src="Assets/images/tweleve.jpg"
+                alt="img"
+                class="w-full h-auto hidden"
+              />
+              <img
+                id="event3"
+                src="Assets/images/three.jpg"
+                alt="img"
+                class="w-full h-auto hidden"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admission Open Section -->
+    <section class="w-full py-12 bg-white">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between"
+      >
+        <!-- Left Content -->
+        <div class="md:w-1/2 text-left">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4"
+          >
     
+            <span class="border-l-4 border-[#1e3a8a] pl-2">Admission Open</span>
+          </h2>
+          <p class="text-lg text-gray-900">
+            <span class="text-red-500 font-bold">From</span>
+            <span class="text-[#1e3a8a] font-semibold"
+              >Kindergarten to Grade XI</span
+            >
+          </p>
+          <button
+            class="mt-6 bg-red-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-red-700 transition"
+          >
+            Apply Now
+          </button>
+        </div>
+
+        <!-- Right Images -->
+        <div class="md:w-1/2 grid grid-cols-2 gap-4 mt-8 md:mt-0">
+          <img
+            src="Assets/images/six.jpg"
+            alt="Event Image 1"
+            class="w-full h-auto rounded-lg shadow-md"
+          />
+          <img
+            src="Assets/images/seven.jpg"
+            alt="Event Image 2"
+            class="w-full h-auto rounded-lg shadow-md"
+          />
+          <img
+            src="Assets/images/one.jpg"
+            alt="Event Image 3"
+            class="w-full h-auto rounded-lg shadow-md"
+          />
+          <img
+            src="Assets/images/nine.jpg"
+            alt="Event Image 4"
+            class="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="w-full bg-[#1e3a8a] text-white py-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="flex flex-col items-start">
+          <img
+            src="Assets/images/logo.png"
+            alt="Logo"
+            class="h-20 w-auto mb-4"
+          />
+          <p class="text-sm">
+            Pragati is not just a school but an educational dimension here to
+            set you apart with the finest learning experience.
+          </p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">Academic Life</a></li>
+            <li><a href="#" class="hover:underline">News and Events</a></li>
+            <li><a href="#" class="hover:underline">About</a></li>
+            <li><a href="#" class="hover:underline">Admission</a></li>
+            <li><a href="#" class="hover:underline">Career Opportunity</a></li>
+            <li><a href="#" class="hover:underline">Gallery</a></li>
+            <li><a href="#" class="hover:underline">Downloads</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact and Social Media Section -->    <div>
+          <h3 class="text-lg font-bold mb-4">Contact</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <i class="fas fa-map-marker-alt mr-2"></i>
+              Batulechaur, Pokhara-16
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-2"></i>
+              info@pragatischool.edu.np
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone-alt mr-2"></i>
+              061-443204,444766,443338
+            </li>
+          </ul>
+          <!-- Social Media Icons -->
+          <div class="mt-4 flex space-x-4">
+            <a
+              href="#"
+              class="text-white text-xl hover:text-gray-300 transition"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white text-xl hover:text-gray-300 transition"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white text-xl hover:text-gray-300 transition"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white text-xl hover:text-gray-300 transition"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 
   <script src="./Assets/scripts/scripts.js"></script>
