@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pragati School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/your-kit-id.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/9d508255d4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="relative">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-transparent z-50">
+      <div
+        class="container mx-auto px-4 flex justify-between items-center py-4"
+      >
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+          <img src="Assets/images/logo.png" alt="Logo" class="h-12 w-12" />
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-8">
+          <li><a href="about.html" class="text-white hover:text-[#cb356a]">About</a></li>
+          <li>
+            <a href="#" class="text-white hover:text-[#cb356a]">Academics</a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-[#cb356a]">Curriculum</a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-[#cb356a]">Admission</a>
+          </li>
+          <li><a href="#" class="text-white hover:text-[#cb356a]">Visit</a></li>
+          <li>
+            <a href="#" class="text-white hover:text-[#cb356a]">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Login Button (Always Visible) -->
+        <a
+          href="https://ingrails.com/school/"
+          class="hidden md:block bg-[#cb356a] text-white px-6 py-2 rounded-full hover:bg-[#a72c5a] transition"
+        >
+          Login
+        </a>
+
+        <!-- Hamburger Icon for Mobile -->
+        <button
+          class="md:hidden text-white focus:outline-none"
+          onclick="toggleMenu()"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden bg-[#cb356a] md:hidden">
+        <ul class="space-y-4 p-4">
+          <li>
+            <a href="about.html" class="block text-white hover:text-gray-300">About</a>
+          </li>
+          <li>
+            <a href="#" class="block text-white hover:text-gray-300"
+              >Academics</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block text-white hover:text-gray-300"
+              >Curriculum</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block text-white hover:text-gray-300"
+              >Admission</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block text-white hover:text-gray-300">Visit</a>
+          </li>
+          <li>
+            <a href="#" class="block text-white hover:text-gray-300">Contact</a>
+          </li>
+          <li>
+            <a
+              href="https://ingrails.com/school/"
+              class="block bg-white text-[#cb356a] text-center px-4 py-2 rounded-full hover:bg-gray-100 transition"
+            >
+              Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
