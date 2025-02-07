@@ -16,100 +16,195 @@
   </head>
   <body class="relative">
     <!-- Navigation Bar -->
-    <nav class="fixed top-0 w-full bg-transparent z-50">
-      <div
-        class="container mx-auto px-4 flex justify-between items-center py-4"
-      >
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center">
-          <img src="Assets/images/logo.png" alt="Logo" class="h-12 w-12" />
-        </a>
+    <nav id="navbar" class="fixed top-0 w-full bg-white z-50 shadow-lg transition-all duration-300">
+        <div class="container mx-auto px-4 flex justify-between items-center py-4">
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center">
+            <img src="Assets/images/logo.png" alt="Logo" class="h-12 w-12" />
+          </a>
+      
+          <!-- Desktop Menu -->
+          <ul class="hidden md:flex space-x-8">
+            <li>
+              <a href="about.html" class="text-black hover:text-[#cb356a]">About</a>
+            </li>
+            <li>
+              <a href="#" class="text-black hover:text-[#cb356a]">Academics</a>
+            </li>
+            <li>
+              <a href="#" class="text-black hover:text-[#cb356a]">Curriculum</a>
+            </li>
+            <li>
+              <a href="#" class="text-black hover:text-[#cb356a]">Admission</a>
+            </li>
+            <li>
+              <a href="#" class="text-black hover:text-[#cb356a]">Visit</a>
+            </li>
+            <li>
+              <a href="#" class="text-black hover:text-[#cb356a]">Contact</a>
+            </li>
+          </ul>
+      
+          <!-- Login Button (Remains White) -->
+          <a href="https://ingrails.com/school/" 
+             class="hidden md:block bg-[#cb356a] text-white px-6 py-2 rounded-full hover:bg-[#a72c5a] transition">
+            Login
+          </a>
+      
+          <!-- Hamburger Icon for Mobile -->
+          <button class="md:hidden text-black focus:outline-none" onclick="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden bg-[#cb356a] md:hidden">
+          <ul class="space-y-4 p-4">
+            <li>
+              <a href="about.html" class="block text-white hover:text-gray-300">About</a>
+            </li>
+            <li>
+              <a href="#" class="block text-white hover:text-gray-300">Academics</a>
+            </li>
+            <li>
+              <a href="#" class="block text-white hover:text-gray-300">Curriculum</a>
+            </li>
+            <li>
+              <a href="#" class="block text-white hover:text-gray-300">Admission</a>
+            </li>
+            <li>
+              <a href="#" class="block text-white hover:text-gray-300">Visit</a>
+            </li>
+            <li>
+              <a href="#" class="block text-white hover:text-gray-300">Contact</a>
+            </li>
+            <li>
+              <a href="https://ingrails.com/school/" 
+                 class="block bg-white text-[#cb356a] text-center px-4 py-2 rounded-full hover:bg-gray-100 transition">
+                Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
 
-        <!-- Desktop Menu -->
-        <ul class="hidden md:flex space-x-8">
-          <li><a href="about.html" class="text-white hover:text-[#cb356a]">About</a></li>
-          <li>
-            <a href="#" class="text-white hover:text-[#cb356a]">Academics</a>
-          </li>
-          <li>
-            <a href="#" class="text-white hover:text-[#cb356a]">Curriculum</a>
-          </li>
-          <li>
-            <a href="#" class="text-white hover:text-[#cb356a]">Admission</a>
-          </li>
-          <li><a href="#" class="text-white hover:text-[#cb356a]">Visit</a></li>
-          <li>
-            <a href="#" class="text-white hover:text-[#cb356a]">Contact</a>
-          </li>
-        </ul>
 
-        <!-- Login Button (Always Visible) -->
-        <a
-          href="https://ingrails.com/school/"
-          class="hidden md:block bg-[#cb356a] text-white px-6 py-2 rounded-full hover:bg-[#a72c5a] transition"
+    <section class="w-full bg-[#cb356a] py-16">
+        <div
+          class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0"
         >
-          Login
-        </a>
-
-        <!-- Hamburger Icon for Mobile -->
-        <button
-          class="md:hidden text-white focus:outline-none"
-          onclick="toggleMenu()"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-8 w-8"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"
+          <!-- Left Text Section -->
+          <div class="md:w-1/2 text-center md:text-left px-4">
+            <h2 class="text-white text-4xl font-bold mb-6">
+              Pragati Secondary School
+            </h2>
+            <p class="text-white text-lg leading-relaxed">
+              Pragati Secondary School, founded and run under Pragati Education
+              Foundation, is a co-educational private school located in
+              Batulechour -16 Pokhara. Motivated by the zeal of the local academic
+              enthusiasts who accentuated on the need to establish an English
+              Medium school in the very locality, Pragati was founded in 2047 B.S.
+              (1999 A.D) by Mr. Basanta Baniya, a local resident. Back then, the
+              main objective behind its establishment was to stop a much strenuous
+              exodus of the local students flocking into the main city center for
+              better education.
+            </p>
+           
+          </div>
+  
+          <!-- Right Image Section -->
+          <div class="md:w-1/2 px-4">
+            <img
+              src="Assets/images/about.jpg"
+              alt="Pragati School"
+              class="rounded-lg shadow-lg w-full h-auto"
+              style="max-width: 720px; max-height: 540px"
             />
-          </svg>
-        </button>
-      </div>
+          </div>
+        </div>
+      </section>
 
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden bg-[#cb356a] md:hidden">
-        <ul class="space-y-4 p-4">
-          <li>
-            <a href="about.html" class="block text-white hover:text-gray-300">About</a>
-          </li>
-          <li>
-            <a href="#" class="block text-white hover:text-gray-300"
-              >Academics</a
-            >
-          </li>
-          <li>
-            <a href="#" class="block text-white hover:text-gray-300"
-              >Curriculum</a
-            >
-          </li>
-          <li>
-            <a href="#" class="block text-white hover:text-gray-300"
-              >Admission</a
-            >
-          </li>
-          <li>
-            <a href="#" class="block text-white hover:text-gray-300">Visit</a>
-          </li>
-          <li>
-            <a href="#" class="block text-white hover:text-gray-300">Contact</a>
-          </li>
-          <li>
+    <!-- Footer Section -->
+    <footer class="w-full bg-[#1e3a8a] text-white py-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="flex flex-col items-start">
+          <img
+            src="Assets/images/logo.png"
+            alt="Logo"
+            class="h-20 w-auto mb-4"
+          />
+          <p class="text-sm">
+            Pragati is not just a school but an educational dimension here to
+            set you apart with the finest learning experience.
+          </p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">Academic Life</a></li>
+            <li><a href="#" class="hover:underline">News and Events</a></li>
+            <li><a href="#" class="hover:underline">About</a></li>
+            <li><a href="#" class="hover:underline">Admission</a></li>
+            <li><a href="#" class="hover:underline">Career Opportunity</a></li>
+            <li><a href="#" class="hover:underline">Gallery</a></li>
+            <li><a href="#" class="hover:underline">Downloads</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact and Social Media Section -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Contact</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <i class="fas fa-map-marker-alt mr-2"></i>
+              Batulechaur, Pokhara-16
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-2"></i>
+              info@pragatischool.edu.np
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone-alt mr-2"></i>
+              061-443204,444766,443338
+            </li>
+          </ul>
+          <!-- Social Media Icons -->
+          <div class="mt-4 flex space-x-4">
             <a
-              href="https://ingrails.com/school/"
-              class="block bg-white text-[#cb356a] text-center px-4 py-2 rounded-full hover:bg-gray-100 transition"
+              href="#"
+              class="text-white text-xl hover:text-gray-300 transition"
             >
-              Login
+              <i class="fab fa-facebook-f"></i>
             </a>
-          </li>
-        </ul>
+            <a
+              href="#"
+              class="text-white text-xl hover:text-gray-300 transition"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white text-xl hover:text-gray-300 transition"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white text-xl hover:text-gray-300 transition"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
       </div>
-    </nav>
+    </footer>
   </body>
+
+  <script src="./Assets/scripts/scripts.js"></script>
 </html>

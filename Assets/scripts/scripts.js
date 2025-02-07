@@ -58,3 +58,25 @@ const carousel = document.getElementById('carousel-slides');
     const menu = document.getElementById("mobile-menu");
     menu.classList.toggle("hidden");
   }
+
+
+  window.addEventListener("scroll", function () {
+    let navbar = document.getElementById("navbar");
+  
+    if (window.scrollY > 50) {
+      navbar.classList.add("bg-white", "shadow-lg");
+      navbar.classList.remove("bg-transparent");
+      navbar.querySelectorAll("a").forEach(link => {
+        link.classList.add("text-black");
+        link.classList.remove("text-white");
+      });
+    } else {
+      navbar.classList.add("bg-transparent");
+      navbar.classList.remove("bg-white", "shadow-lg");
+      navbar.querySelectorAll("a").forEach(link => {
+        link.classList.add("text-white");
+        link.classList.remove("text-black");
+      });
+    }
+  });
+  
