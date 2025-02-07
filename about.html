@@ -16,116 +16,405 @@
   </head>
   <body class="relative">
     <!-- Navigation Bar -->
-    <nav id="navbar" class="fixed top-0 w-full bg-white z-50 shadow-lg transition-all duration-300">
-        <div class="container mx-auto px-4 flex justify-between items-center py-4">
-          <!-- Logo -->
-          <a href="index.html" class="flex items-center">
-            <img src="Assets/images/logo.png" alt="Logo" class="h-12 w-12" />
-          </a>
-      
-          <!-- Desktop Menu -->
-          <ul class="hidden md:flex space-x-8">
-            <li>
-              <a href="about.html" class="text-black hover:text-[#cb356a]">About</a>
-            </li>
-            <li>
-              <a href="#" class="text-black hover:text-[#cb356a]">Academics</a>
-            </li>
-            <li>
-              <a href="#" class="text-black hover:text-[#cb356a]">Curriculum</a>
-            </li>
-            <li>
-              <a href="#" class="text-black hover:text-[#cb356a]">Admission</a>
-            </li>
-            <li>
-              <a href="#" class="text-black hover:text-[#cb356a]">Visit</a>
-            </li>
-            <li>
-              <a href="#" class="text-black hover:text-[#cb356a]">Contact</a>
-            </li>
-          </ul>
-      
-          <!-- Login Button (Remains White) -->
-          <a href="https://ingrails.com/school/" 
-             class="hidden md:block bg-[#cb356a] text-white px-6 py-2 rounded-full hover:bg-[#a72c5a] transition">
-            Login
-          </a>
-      
-          <!-- Hamburger Icon for Mobile -->
-          <button class="md:hidden text-black focus:outline-none" onclick="toggleMenu()">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </button>
-        </div>
-      
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden bg-[#cb356a] md:hidden">
-          <ul class="space-y-4 p-4">
-            <li>
-              <a href="about.html" class="block text-white hover:text-gray-300">About</a>
-            </li>
-            <li>
-              <a href="#" class="block text-white hover:text-gray-300">Academics</a>
-            </li>
-            <li>
-              <a href="#" class="block text-white hover:text-gray-300">Curriculum</a>
-            </li>
-            <li>
-              <a href="#" class="block text-white hover:text-gray-300">Admission</a>
-            </li>
-            <li>
-              <a href="#" class="block text-white hover:text-gray-300">Visit</a>
-            </li>
-            <li>
-              <a href="#" class="block text-white hover:text-gray-300">Contact</a>
-            </li>
-            <li>
-              <a href="https://ingrails.com/school/" 
-                 class="block bg-white text-[#cb356a] text-center px-4 py-2 rounded-full hover:bg-gray-100 transition">
-                Login
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      
+    <nav
+      id="navbar"
+      class="fixed top-0 w-full bg-white z-50 shadow-lg transition-all duration-300"
+    >
+      <div
+        class="container mx-auto px-4 flex justify-between items-center py-4"
+      >
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+          <img src="Assets/images/logo.png" alt="Logo" class="h-12 w-12" />
+        </a>
 
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-8">
+          <li>
+            <a href="about.html" class="text-black hover:text-[#cb356a]"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-[#cb356a]">Academics</a>
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-[#cb356a]">Curriculum</a>
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-[#cb356a]">Admission</a>
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-[#cb356a]">Visit</a>
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-[#cb356a]">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Login Button (Remains White) -->
+        <a
+          href="https://ingrails.com/school/"
+          class="hidden md:block bg-[#cb356a] text-white px-6 py-2 rounded-full hover:bg-[#a72c5a] transition"
+        >
+          Login
+        </a>
+
+        <!-- Hamburger Icon for Mobile -->
+        <button
+          class="md:hidden text-black focus:outline-none"
+          onclick="toggleMenu()"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden bg-[#cb356a] md:hidden">
+        <ul class="space-y-4 p-4">
+          <li>
+            <a href="about.html" class="block text-white hover:text-gray-300"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block text-white hover:text-gray-300"
+              >Academics</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block text-white hover:text-gray-300"
+              >Curriculum</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block text-white hover:text-gray-300"
+              >Admission</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block text-white hover:text-gray-300">Visit</a>
+          </li>
+          <li>
+            <a href="#" class="block text-white hover:text-gray-300">Contact</a>
+          </li>
+          <li>
+            <a
+              href="https://ingrails.com/school/"
+              class="block bg-white text-[#cb356a] text-center px-4 py-2 rounded-full hover:bg-gray-100 transition"
+            >
+              Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <section class="w-full bg-[#cb356a] py-16">
-        <div
-          class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0"
-        >
-          <!-- Left Text Section -->
-          <div class="md:w-1/2 text-center md:text-left px-4">
-            <h2 class="text-white text-4xl font-bold mb-6">
-              Pragati Secondary School
-            </h2>
-            <p class="text-white text-lg leading-relaxed">
-              Pragati Secondary School, founded and run under Pragati Education
-              Foundation, is a co-educational private school located in
-              Batulechour -16 Pokhara. Motivated by the zeal of the local academic
-              enthusiasts who accentuated on the need to establish an English
-              Medium school in the very locality, Pragati was founded in 2047 B.S.
-              (1999 A.D) by Mr. Basanta Baniya, a local resident. Back then, the
-              main objective behind its establishment was to stop a much strenuous
-              exodus of the local students flocking into the main city center for
-              better education.
-            </p>
-           
-          </div>
-  
-          <!-- Right Image Section -->
-          <div class="md:w-1/2 px-4">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0"
+      >
+        <!-- Left Text Section -->
+        <div class="md:w-1/2 text-center md:text-left px-4">
+          <h2 class="text-white text-4xl font-bold mb-6">
+            Pragati Secondary School
+          </h2>
+          <p class="text-white text-lg leading-relaxed">
+            Pragati Secondary School, founded and run under Pragati Education
+            Foundation, is a co-educational private school located in
+            Batulechour -16 Pokhara. Motivated by the zeal of the local academic
+            enthusiasts who accentuated on the need to establish an English
+            Medium school in the very locality, Pragati was founded in 2047 B.S.
+            (1999 A.D) by Mr. Basanta Baniya, a local resident. Back then, the
+            main objective behind its establishment was to stop a much strenuous
+            exodus of the local students flocking into the main city center for
+            better education.
+          </p>
+        </div>
+
+        <!-- Right Image Section -->
+        <div class="md:w-1/2 px-4">
+          <img
+            src="Assets/images/about.jpg"
+            alt="Pragati School"
+            class="rounded-lg shadow-lg w-full h-auto"
+            style="max-width: 720px; max-height: 540px"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- vision section -->
+
+    <section class="w-full py-16 bg-[#f4f4f8]">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 px-4"
+      >
+        <!-- Left Content: Vision Text -->
+        <div class="md:w-1/2 text-center md:text-left">
+          <h2 class="text-[#1e3a8a] text-4xl font-bold mb-6">
+            <span class="border-l-4 border-[#cb356a] pl-2"
+              >Vision / Mission:</span
+            >
+          </h2>
+          <p class="text-gray-700 text-lg leading-relaxed">
+            Our mission is to foster a transformative educational journey that
+            empowers students to excel academically, thrive personally, and
+            contribute meaningfully to society. We do this by cultivating a
+            dynamic learning environment that embraces progressive educational
+            principles, whole-child development, and the pursuit of academic
+            excellence. Our aim is to empower students with the values of
+            inquiry, knowledge, care, critical thinking, and intercultural
+            understanding, ensuring they are globally and locally prepared to
+            contribute positively to a better world.
+          </p>
+        </div>
+
+        <!-- Right Content: Vision Image -->
+        <div class="md:w-1/2 text-center">
+          <div class="relative inline-block">
             <img
-              src="Assets/images/about.jpg"
-              alt="Pragati School"
-              class="rounded-lg shadow-lg w-full h-auto"
-              style="max-width: 720px; max-height: 540px"
+              src="Assets/images/vision.png"
+              alt="Vision"
+              class="rounded-lg shadow-lg w-full max-w-md"
             />
+            <div
+              class="absolute -top-6 left-1/2 transform -translate-x-1/2"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-16 bg-[#f4f4f8]">
+      <div class="container mx-auto px-4">
+        <!-- Section Header -->
+        <div class="mb-8">
+          <h2 class="text-[#1e3a8a] text-4xl font-bold">
+            <span class="border-l-4 border-[#cb356a] pl-2">Our Values :</span>
+          </h2>
+        </div>
+
+        <!-- Values List -->
+        <div class="space-y-8">
+          <!-- Value 1 -->
+          <div class="flex items-start space-x-4">
+            <img
+              src="Assets/images/first.png"
+              alt="Courage"
+              class="h-16 w-16"
+            />
+            <div>
+              <h3 class="text-[#1e3a8a] text-2xl font-bold mb-2">Courage:</h3>
+              <p class="text-gray-700 text-lg leading-relaxed">
+                We cultivate courage in students, giving them the confidence to
+                be themselves and a push for them to take the leap of faith.
+                Encouraging the students, we make them brave enough to stand up
+                for themselves.
+              </p>
+            </div>
+          </div>
+
+          <!-- Value 2 -->
+          <div class="flex items-start space-x-4">
+            <img
+              src="Assets/images/second.png"
+              alt="Integrity"
+              class="h-16 w-16"
+            />
+            <div>
+              <h3 class="text-[#1e3a8a] text-2xl font-bold mb-2">Integrity:</h3>
+              <p class="text-gray-700 text-lg leading-relaxed">
+                Academic integrity gives the students and faculty the
+                flexibility to think outside the box, gather knowledge, and
+                create innovative work while also appreciating and acknowledging
+                the efforts of others.
+              </p>
+            </div>
+          </div>
+
+          <!-- Value 3 -->
+          <div class="flex items-start space-x-4">
+            <img
+              src="Assets/images/third.png"
+              alt="Respect"
+              class="h-16 w-16"
+            />
+            <div>
+              <h3 class="text-[#1e3a8a] text-2xl font-bold mb-2">Respect:</h3>
+              <p class="text-gray-700 text-lg leading-relaxed">
+                Respect, as a key value in schools, strengthens the school's
+                overall culture and, as a result, contributes to more individual
+                success as students feel safe and secure in their surroundings.
+              </p>
+            </div>
+          </div>
+
+          <!-- Value 4 -->
+          <div class="flex items-start space-x-4">
+            <img
+              src="Assets/images/forth.png"
+              alt="Responsibility"
+              class="h-16 w-16"
+            />
+            <div>
+              <h3 class="text-[#1e3a8a] text-2xl font-bold mb-2">
+                Responsibility:
+              </h3>
+              <p class="text-gray-700 text-lg leading-relaxed">
+                We represent and advocate for our community, putting students'
+                and the general public's needs and interests first. We set fair
+                goals and provide a favorable learning atmosphere.
+              </p>
+            </div>
+          </div>
+
+          <!-- Value 5 -->
+          <div class="flex items-start space-x-4">
+            <img
+              src="Assets/images/fifth.png"
+              alt="Relationship"
+              class="h-16 w-16"
+            />
+            <div>
+              <h3 class="text-[#1e3a8a] text-2xl font-bold mb-2">
+                Relationship:
+              </h3>
+              <p class="text-gray-700 text-lg leading-relaxed">
+                Better bonding with teachers and administrators can
+                significantly boost the confidence of students and encourage
+                them to learn more. We form strong relationships for more
+                academic engagement and better behavior.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-16 bg-[#e8eaf6]">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8"
+      >
+        <div class="md:w-1/3 flex justify-center">
+          <div class="relative">
+            <div
+              class="relative w-64 h-64 rounded-full overflow-hidden border-4 border-[#1e3a8a]"
+            >
+              <img
+                src="Assets/images/about.jpg"
+                alt="Chairman"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="md:w-2/3">
+          <h2 class="text-[#cb356a] text-3xl md:text-4xl font-bold mb-4">
+            Message From The Chairman
+          </h2>
+          <p class="text-gray-700 text-lg leading-relaxed mb-4">
+            A warm welcome to pragati school, a distinguished institution that
+            has taken immense pride in its journey of educational excellence
+            since its inception.
+          </p>
+          <p class="text-gray-700 text-lg leading-relaxed mb-4">
+            Our collaborative efforts, guided by eminent educationalists, the
+            foresighted executive board, revered guardians, notable alumni,
+            innovative teachers, and vibrant learners, have cultivated an
+            environment that not only imparts knowledge but also fosters skills
+            and technologies for the ever-evolving landscape of the modern age.
+          </p>
+          <p class="text-gray-700 text-lg leading-relaxed mb-4">
+            In our commitment to staying at the forefront of educational
+            innovation, I am delighted to announce that pragati school is the
+            first IB PYP candidate school in Gandaki province. This milestone
+            reflects our dedication to incorporating globally recognized
+            pedagogy into our curriculum. The International Baccalaureate
+            Primary Years Programme (IB PYP) is seamlessly woven into the fabric
+            of our educational approach, providing our students with an enriched
+            and internationally recognized learning experience.
+          </p>
+          <p class="text-gray-700 text-lg leading-relaxed">
+            Thank you for your continued support and belief in the mission of
+            Pragati School.
+          </p>
+          <p class="text-[#1e3a8a] text-xl font-bold mt-6">
+            - Mr. Aarjit poudel
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="w-full py-16 bg-[#f4f4f8]">
+        <div class="container mx-auto px-4">
+    
+          <div class="mb-12">
+            <h2 class="text-[#1e3a8a] text-4xl font-bold">
+              <span class="border-l-4 border-[#cb356a] pl-2">What Makes us Different:</span>
+            </h2>
+          </div>
+      
+     
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-16">
+           
+            <div>
+              <img src="Assets/images/13.jpg" alt="IB PYP" class="rounded-lg shadow-lg w-full h-auto">
+            </div>
+      
+          
+            <div>
+              <h3 class="text-[#1e3a8a] text-2xl font-bold mb-4">IB PYP Candidate School</h3>
+              <p class="text-gray-700 text-lg leading-relaxed">
+               Pragati school is a Candidate School for the IB PYP. This school is pursuing authorization as an IB World
+                School. These are schools that share a common philosophy—a commitment to high-quality, challenging,
+                international education that Fishtail believes is important for our students.
+              </p>
+              <p class="text-gray-700 text-lg leading-relaxed mt-4">
+                *Only schools authorized by the IB Organization can offer any of its four academic programs: the Primary Years
+                Programme (PYP), the Middle Years Programme (MYP), the Diploma Programme, or the Career-related Programme
+                (CP). Candidate status gives no guarantee that authorization will be granted. For further information about
+                the IB and its programmes, visit <a href="#" target="_blank" class="text-[#cb356a] hover:underline">www.ibo.org</a>.
+              </p>
+            </div>
+          </div>
+      
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          
+            <div>
+              <h3 class="text-[#1e3a8a] text-2xl font-bold mb-4">A Legacy of Excellence</h3>
+              <p class="text-gray-700 text-lg leading-relaxed">
+                For 29 years, we have been at the forefront of educational achievement, shaping the lives and careers of
+                students both locally and internationally. Pragati's distinguished reputation in Nepal’s academic landscape
+                is mirrored by our global network of accomplished alumni. As we celebrate our legacy of success, we are
+                committed to advancing even further, pushing boundaries, and enhancing our impact on the world stage.
+              </p>
+            </div>
+      
+            <!-- Right Image -->
+            <div>
+              <img src="Assets/images/eleven.jpg" alt="Legacy of Excellence" class="rounded-lg shadow-lg w-full h-auto">
+            </div>
           </div>
         </div>
       </section>
+      
 
     <!-- Footer Section -->
     <footer class="w-full bg-[#1e3a8a] text-white py-12">
